@@ -1,0 +1,22 @@
+.bus-detail {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .bus-detail h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .bus-detail p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .bus-detail strong {
+    color: #333;
+  }
+  

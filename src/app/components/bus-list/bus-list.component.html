@@ -1,0 +1,12 @@
+<div *ngIf="(buses ?? []).length > 0; else noBuses">
+  <h1>Buszok Listája</h1>
+  <ul>
+    <li *ngFor="let bus of buses">
+      <span>{{ bus.busNumber }} | {{ bus.origin }} - {{ bus.destination }} | {{ bus.departureTime | date: 'short' }}</span>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noBuses>
+  <p>Nincsenek elérhető buszok.</p>
+</ng-template>

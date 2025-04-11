@@ -1,0 +1,8 @@
+<div *ngIf="bus">
+  <h1>Busz részletei</h1>
+  <p><strong>Busz szám:</strong> {{ bus.busNumber }}</p>
+  <p><strong>Indulás helye:</strong> {{ bus.origin }}</p>
+  <p><strong>Érkezés helye:</strong> {{ bus.destination }}</p>
+  <p><strong>Indulás ideje:</strong> {{ bus.departureTime | date: 'short' }}</p>
+  <p><strong>Szabad helyek száma:</strong> {{ bus.availableSeats }}</p>
+</div>

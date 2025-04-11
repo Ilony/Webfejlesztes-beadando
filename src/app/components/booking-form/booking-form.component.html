@@ -1,0 +1,18 @@
+<div class="booking-form">
+  <h2>Foglalás a buszra: {{ bus.busNumber }}</h2>
+  <p><strong>Indulás:</strong> {{ bus.origin }} → {{ bus.destination }}</p>
+  <p><strong>Időpont:</strong> {{ bus.departureTime }}</p>
+  <p><strong>Szabad helyek:</strong> {{ bus.availableSeats }}</p>
+
+  <form>
+    <div>
+      <label for="name">Név:</label>
+      <input id="name" type="text" placeholder="Írd be a neved" required>
+    </div>
+    <div>
+      <label for="seats">Hány helyet szeretnél foglalni?</label>
+      <input id="seats" type="number" min="1" max="{{ bus.availableSeats }}" required>
+    </div>
+    <button type="submit">Foglalás</button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div *ngIf="tickets.length > 0; else noTickets">
+  <h1>Foglalások</h1>
+  <ul>
+    <li *ngFor="let ticket of tickets">
+      <div>
+        <h3>{{ ticket.busNumber }} - {{ ticket.seatNumber }}</h3>
+        <p><strong>Indulás:</strong> {{ ticket.departureTime | date: 'short' }}</p>
+        <p><strong>Utazó:</strong> {{ ticket.passengerName }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noTickets>
+  <p>Nincsenek foglalások.</p>
+</ng-template>

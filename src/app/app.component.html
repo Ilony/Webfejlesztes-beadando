@@ -1,0 +1,18 @@
+<div class="navbar">
+  <button (click)="activeComponent = 'busList'">Busz Lista</button>
+  <button (click)="activeComponent = 'ticketList'">Jegy Lista</button>
+  <button (click)="activeComponent = 'bookingForm'">Foglalás</button>
+  <button (click)="activeComponent = 'busDetail'">Busz Részletek</button>
+</div>
+
+<!-- Busz lista komponens -->
+<app-bus-list *ngIf="activeComponent === 'busList'" [buses]="buses"></app-bus-list>
+
+<!-- Jegy lista komponens -->
+<app-ticket-list *ngIf="activeComponent === 'ticketList'" [tickets]="tickets"></app-ticket-list>
+
+<!-- Foglalás komponens -->
+<app-booking-form *ngIf="activeComponent === 'bookingForm'"></app-booking-form>
+
+<!-- Busz részletek komponens -->
+<app-bus-detail *ngIf="activeComponent === 'busDetail'" [bus]="selectedBus"></app-bus-detail>
