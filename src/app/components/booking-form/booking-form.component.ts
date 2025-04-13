@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./booking-form.component.css']
 })
 export class BookingFormComponent {
-  @Input() bus: any; // Itt fogadjuk az adatokat
+  @Input() bus: any;
 
   constructor() { }
 
-  // Egyéb logika...
+  
 }
