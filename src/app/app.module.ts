@@ -1,8 +1,8 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app.component';  // Standalone komponens importálása
-import { DatePipe } from '@angular/common'; // DatePipe importálása
+import { AppComponent } from './app.component';  
+import { DatePipe } from '@angular/common'; 
 
 bootstrapApplication(AppComponent, {
-  providers: [DatePipe]  // A DatePipe hozzáadása provider-ként
+  providers: [DatePipe]  
 })
 .catch(err => console.error(err));
