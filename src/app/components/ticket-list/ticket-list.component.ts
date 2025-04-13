@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-t
+import { CommonModule } from '@angular/common';  
 
 interface Ticket {
   busNumber: string;
@@ -12,8 +12,8 @@ interface Ticket {
   selector: 'app-ticket-list',
   templateUrl: './ticket-list.component.html',
   styleUrls: ['./ticket-list.component.css'],
-  standalone: true, // Standalone komponensként
-  imports: [CommonModule]  // Importáljuk a CommonModule-t, hogy a pipe-ok működjenek
+  standalone: true, 
+  imports: [CommonModule]  
 })
 export class TicketListComponent {
   @Input() tickets: Ticket[] = [
@@ -40,6 +40,6 @@ export class TicketListComponent {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.tickets); // Ellenőrizd a ticket adatokat a konzolon
+    console.log(this.tickets); 
   }
 }
