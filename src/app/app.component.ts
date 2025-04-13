@@ -3,7 +3,7 @@ import { BusListComponent } from './components/bus-list/bus-list.component';
 import { BusDetailComponent } from './components/bus-detail/bus-detail.component';
 import { BookingFormComponent } from './components/booking-form/booking-form.component';
 import { TicketListComponent } from './components/ticket-list/ticket-list.component';
-import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-t
+import { CommonModule } from '@angular/common';  
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-
   styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [
-    CommonModule,   // Add hozzá a CommonModule-t
+    CommonModule,   
     BusListComponent,
     BusDetailComponent,
     BookingFormComponent,
@@ -20,7 +20,7 @@ import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-
 })
 export class AppComponent {
   title = 'Buszjegy Lefoglaló';
-  activeComponent: string = 'busList'; // Kezdőoldal a busz lista
+  activeComponent: string = 'busList'; 
 
   selectedBus = {
     busNumber: '123',
