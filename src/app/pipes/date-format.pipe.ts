@@ -3,7 +3,7 @@ import { DatePipe } from '@angular/common';
 
 @Pipe({
   name: 'dateFormat',
-  standalone: true  // Standalone pipe
+  standalone: true 
 })
 export class DateFormatPipe implements PipeTransform {
 
