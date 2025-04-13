@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { DatePipe } from '@angular/common';
-import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-t
+import { CommonModule } from '@angular/common';  
 
 @Component({
   selector: 'app-bus-detail',
@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';  // Importáljuk a CommonModule-
   templateUrl: './bus-detail.component.html',
   styleUrls: ['./bus-detail.component.css'],
   providers: [DatePipe],
-  imports: [CommonModule]  // Add hozzá a CommonModule-t
+  imports: [CommonModule] 
 })
 export class BusDetailComponent {
   @Input() bus!: { 
@@ -22,7 +22,7 @@ export class BusDetailComponent {
   constructor(private datePipe: DatePipe) {}
 
   ngOnInit() {
-    console.log(this.bus); // Ellenőrizd a bus adatokat a konzolon
+    console.log(this.bus); 
   }
 
   transformDate(date: string | null): string {
